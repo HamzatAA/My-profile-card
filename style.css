@@ -32,22 +32,25 @@ body {
 
 .card {
     background-color: #ff8906;
-    border-radius: 20px;
     padding: 30px;
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
+    max-width: none;
     transition: all 0.3s ease;
 }
 
 @media (min-width: 600px) {
     .card {
-        width: 100%;
+        width: 80%;
+        border-radius: 20px;
+
     }
 }
 
 @media (min-width: 900px) {
     .card {
-        width: 100%;
+        width: 70%;
+        border-radius: 20px;
+
     }
 }
 
