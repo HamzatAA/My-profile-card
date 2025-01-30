@@ -1,68 +1,106 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
-
-
-body{
-    background: #fff;
+body {
     font-family: "Baskervville", serif;
-    
+    background-color: #fff;
 }
 
-.wrapper{
+.container {
     display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #ff8906;
-  border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.col1{
-    width: 400px;
-  height: 400px;
+.profile_picture{
+    width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
-.col1 img{
+.profile_picture img{
     width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.col2{
-    margin-left: 1rem;
-    width: 30%;
+.card {
+    background-color: #ff8906;
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    transition: all 0.3s ease;
 }
 
-.col2 div{
-    margin-bottom: 1rem;
+@media (min-width: 600px) {
+    .card {
+        width: 80%;
+    }
 }
 
-.col2 div p{
+@media (min-width: 900px) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .card {
+        width: 50%;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name,
+.title,
+.bio,
+.location,
+.Email,
+.socials,
+.time {
+    margin-bottom: 20px;
+}
+
+.name p,
+.title p,
+.bio p,
+.location p,
+.Email p,
+.socials p,
+.time p {
     color: #0f0e17;
     opacity: 40%;
 }
 
-.col2 div h3{
+.name h3,
+.title h3,
+.bio h5,
+.location h3,
+.Email a,
+.socials a img,
+.time div {
     color: #0f0e17;
 }
 
-.bio{
-    line-height: 1.5;
-    color: #0f0e17;
-}
-
-.socials img{
-    margin-right: 1rem;
+.socials img {
+    margin-right: 10px;
     width: 32px;
     height: 32px;
 }
-
-
-  

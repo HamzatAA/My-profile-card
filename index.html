@@ -3,48 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile card</title>
+    <title>My Profile Card</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="col1">
-            <img data-testid="profilePicture" src="images/Snapchat-1465650146-removebg-preview.png" alt="display picture">
-        </div>
-        <div class="col2">
-            <div class="name">
-                <p>Full name</p>
-                <h3 data-testid="fullName">Hamzat Abdulsalam Abiodun</h3>
+    <div class="container">
+        <div class="card" data-testid="profileCard">
+            <div class="profile_picture">
+                <img data-testid="profilePicture" src="images/Snapchat-1465650146-removebg-preview.png" alt="Profile Picture">
             </div>
-            <div class="title">
-                <p>Job Title</p>
-                <h3 data-testid="jobTitle">FrontEnd Developer</h3>
+            <div class="info">
+                <div class="name">
+                    <p>Full name</p>
+                    <h3 data-testid="fullName">Hamzat Abdulsalam Abiodun</h3>
+                </div>
+                <div class="title">
+                    <p>Job Title</p>
+                    <h3 data-testid="jobTitle">FrontEnd Developer</h3>
+                </div>
+                <div class="bio">
+                    <p>Bio</p>
+                    <h5 data-testid="shortBio">"Hi, I'm Abdulsalam, a passionate frontend developer with a keen eye for creating visually appealing and user-friendly interfaces. I specialize in turning design concepts into responsive, interactive web experiences using HTML, CSS, and JavaScript. I'm constantly learning and exploring new technologies to enhance my skills and deliver innovative projects. Let's connect and create something amazing together!"</h5>
+                </div>
+                <div class="location">
+                    <p>Current location</p>
+                    <h3 data-testid="currentLocation">Akure, Ondo State, Nigeria.</h3>
+                </div>
+                <div class="Email">
+                    <p>Email address</p>
+                    <a data-testid="emailAddress" href="mailto:Hamzataabdulsalam@gmail.com">Hamzataabdulsalam@gmail.com</a>
+                </div>
+                <div class="socials" data-testid="socialLinks">
+                    <p>Social links</p>
+                    <a href="https://github.com/HamzatAA"><img src="images/github.png" alt="Github"></a>
+                    <a href="https://instagram.com/upcomingtechbro"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="https://x.com/aahamzat"><img src="images/twitter (4).png" alt="Twitter"></a>
+                </div>
+                <div class="time">
+                    <p>Current time</p>
+                    <div id="UTC_time" data-testid="currentTimeUTC"></div>
+                </div>
             </div>
-            <div class="bio">
-                <p>Bio</p>
-                <h5 data-testid="shortBio">"Hi, I'm Abdulsalam, a passionate frontend developer with a keen eye for creating visually appealing and user-friendly interfaces. I specialize in turning design concepts into responsive, interactive web experiences using HTML, CSS, and JavaScript. I'm constantly learning and exploring new technologies to enhance my skills and deliver innovative projects. Let's connect and create something amazing together!"</h5>
-            </div>
-            <div class="location">
-                <p>Current location</p>
-                <h3 data-testid="currentLocation">Akure, Ondo State, Nigeria.</h3>
-            </div>
-            <div class="Email">
-                <p>Email address</p>
-                <a data-testid="emailAddress" href="mailto:Hamzataabdulsalam@gmail.com">Hamzataabdulsalam@gmail.com</a>
-            </div>
-             <div class="socials" data-testid="socialLinks">
-                <p>Social links</p>
-                <a href="https://github.com/HamzatAA"><img src="images/github.png" alt="Github"></a>
-                <a href="https://instagram.com/upcomingtechbro"><img src="images/instagram.png" alt="instagram"></a>
-                <a href="https://x.com/aahamzat"><img src="images/twitter (4).png" alt="Github"></a>
-             </div>
-            <div class="time">
-                <p>Current time</p>
-                <div id="UTC_time" data-testid="currentTimeUTC"></div>
-            </div>
-            
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<script src="script.js"></script>
